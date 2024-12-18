@@ -1,0 +1,257 @@
+/* Fondo con imagen */ 
+body { 
+    background: url('./images/LAGONEVADO.webp') no-repeat center center fixed; 
+    background-size: cover; 
+    color: #000; 
+    font-family: 'Arial', sans-serif; 
+    margin: 0; 
+    padding: 0; 
+}
+
+
+.libre-baskerville-regular {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .libre-baskerville-bold {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .libre-baskerville-regular-italic {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+.navbar-nav .nav-link {
+    color: black !important;
+  }
+  
+/* Clase para imágenes responsivas */
+    .img-responsive {
+        max-width: 100%;
+        height: auto;
+    }
+    /* Centrar contenido */
+    .contenido {
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Para que ocupe toda la altura de la ventana */
+    width: 100vw;
+    text-align: center;
+    flex-direction: column; /* Para que el botón aparezca debajo de la imagen */
+}
+
+/* Estilo para la imagen dentro del contenedor .contenido */
+.contenido img {
+    display: flex;
+    max-width: auto;
+    height: auto;
+    width: auto  ;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+
+/* Estilo para el botón */
+.contenido button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Efecto hover en el botón */
+.contenido button:hover {
+    background-color: #0056b3;
+}
+
+.nav-item {
+    text-align: center;
+}
+.card-text {
+    color: black;
+    font-size: 22px;
+    text-align:justify;
+    font-style:center;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+.btn btn-outline-light{
+    color: black
+}
+.logonav {
+    height: 58px; /* Ajusta la altura */
+  border-radius: 24%; /* Redondear bordes */
+  display: block;
+  margin-left: 10px ; /* Centrar horizontalmente */
+  /* Sombra suave */
+  display: flex;
+   /* Alinea todo el contenido a la derecha */
+  padding: 5px;
+  background-color: #f8f9fa;
+  
+}
+.carousel-inner img {
+    width: 10%; /* Ancho completo del contenedor */
+    height: 600px; /* Altura fija */
+    /* Mantiene la relación de aspecto, recortando si es necesario */
+}
+.card-container {
+    display: flex;
+    gap: 0;
+    font-size: 0; /* Elimina los espacios blancos entre las tarjetas */
+}
+.card p {
+    padding: 0 20px;
+    margin: 15px 0;
+}
+.card {
+    margin: 0;  /* Asegúrate de que no haya margen entre las tarjetas */
+    font-size: 16px; /* Restablecer el tamaño del texto dentro de las tarjetas *
+}
+.card-container {
+    display: flex;
+    gap: 0; /* Elimina el espacio entre tarjetas */
+}
+
+/* Tarjetas */ .card { background-color: black; 
+    color: white; border: 2px solid silver; 
+    border-radius: 10px; 
+    margin: 10px; 
+    padding: 20px; 
+    transition: transform 0.3s, box-shadow 0.3s; 
+} 
+    .card:hover { transform: translateY(-10px); 
+        box-shadow: 0px 0px 15px rgb(0, 119, 255); 
+    }
+
+.card a {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin: 0; /* Sin margen en las tarjetas */
+    font-size: 16px; /* Restablecer el tamaño del texto dentro de las tarjetas */
+}
+
+.card a:hover {
+    background-color: #45a049;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    
+}
+.slider {
+    width: 95vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+
+}
+
+.slider .slide-track {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(200px * 14);
+}
+
+.slider .slide {
+    width: 100px;
+}
+
+.slider .slide img {
+    width: 100%;
+}
+.nav-link dropdown-toggle {
+    color: white;
+        
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-200px * 7));
+        transform: translateX(calc(-200px * 7));
+    }
+
+    
+}
+
+.fixed-img {
+    height: 200px; 
+    object-fit: contain; 
+    width: 100%; 
+    background-color: #f8f9fa; 
+}
+
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-text {
+    flex-grow: 1; 
+}
+
+.mt-auto {
+    margin-top: auto; 
+}
+.card-text {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.fa-user, .fa-bag-shopping, .fa-cart-shopping {
+    display: flex; /* Usamos flexbox para alinear los íconos */
+    gap: 60px; 
+    font-size: 21px; /* Tamaño de los íconos */
+    color: #150f1d; /* Color de los íconos */
+    transition: transform 0.3s; 
+    margin: 5px ;
+    padding: 10px 10px 10px;
+}
+.fa-playstation {
+    margin: 5px ;
+    padding: 5px 5px 5px;
+    color: #007bff;
+}
+.fa-xbox {
+    margin: 5px ;
+    padding: 5px 5px 5px;
+    color: #1d7221;
+}
+.fa-steam {
+    margin: 5px ;
+    padding: 5px 5px 5px;
+    color: #220897;
+}
+.user-info {
+    display: flex; /* Para alinear el ícono y el nombre en línea */
+    align-items: center; /* Centrar verticalmente */
+    margin-left: 10px; /* Ajusta el margen izquierdo según sea necesario */
+}
+
+.user-info i {
+    margin-right: 5px; /* Espacio entre el ícono y el nombre */
+}

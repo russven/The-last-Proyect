@@ -1,0 +1,111 @@
+:root {
+    --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono', 'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro', 'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+    --transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Imagen de fondo */ 
+body { 
+    background: url('../images/CASCADAPIXEL.gif') no-repeat center center fixed; 
+    background-size: cover; 
+    color: #000; 
+    font-family: 'Arial', sans-serif; 
+    margin: 0; padding: 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+section {
+    background-color: #2a2a2a;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(32, 182, 42, 0.5);
+    width: 350px;
+    text-align: center;
+}
+
+h2 {
+    color: #35bb35;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    animation: fadeIn 2s ease-in-out;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: #f2f2f2;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1f1f1f;
+    color: #f2f2f2;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(34, 182, 42);
+    border: none;
+    color: black;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #3ff06b;
+}
+
+input[type="submit"]:active {
+    transform: scale(0.97);
+}
+
+p {
+    margin-top: 15px;
+    color: #f2f2f2;
+    font-size: 0.9rem;
+}
+
+p a {
+    color: rgb(0, 255, 64);
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 400px) {
+    section {
+        width: 90%;
+    }
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

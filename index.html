@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="icon" href="./src/css/images/logo.png" type="image/png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- nuevas líneas de código para las fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <title>Lentech Tienda Gamer</title>
+</head>
+
+<script>(function(w, d) { w.CollectId = "6710653b48b2ba247e87f15f"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async=true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script><body style="background-color: #efecf1d9;"><body style="background-color: #efecf1d9;">
+  
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-body-terciary">
+    <nav>
+      <a href="index.html">
+        <img src="./src/css/images/logo.png" alt="Logo de la Empresa" class="logonav">
+      </a>
+    </nav>
+  
+    <div class="container-fluid">
+      <button
+        data-mdb-collapse-init
+        class="navbar-toggler"
+        type="button"
+        data-mdb-target="#navbarCenteredExample"
+        aria-controls="navbarCenteredExample"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarCenteredExample">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page"    >Menú Principal</a>
+            <h2 id="seccion4"></h2>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#seccion1">Productos</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a data-mdb-dropdown-init class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" aria-expanded="false">
+              Nosotros
+            </a>
+
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#seccion2">Sobre la empresa</a></li>
+              <li><a class="dropdown-item" href="">Nuestro equipo</a></li>
+              <li><a class="dropdown-item" href="#seccion3">Contactenos</a></li>
+              <li><hr class="dropdown-divider" /></li>  
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <a href="./codigocarrito/index.html" class="cart-link">
+    <i class="fas fa-cart-shopping" type="button"> </i>
+    </a>
+    <a href="https://crud-3-d5ex.onrender.com/" class="user-link">
+     <i class="far fa-address-card" type="button"> </i>
+     <!-- Botón de CRUD que solo debe aparecer para el admin -->
+     <button class="user-link" style="display: none;">Ir al CRUD</button>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const adminButton = document.querySelector(".user-link");
+
+    // Función para comprobar y mostrar/ocultar el botón según el rol
+    const checkUserRole = () => {
+      const userRole = sessionStorage.getItem("userRole");
+      if (userRole === "admin") {
+        adminButton.style.display = "block"; // Mostrar el botón
+      } else {
+        adminButton.style.display = "none"; // Ocultar el botón
+      }
+    };
+
+    // Comprobar el rol inicial al cargar la página
+    checkUserRole();
+
+    // Escuchar cambios en el sessionStorage (por si cambian el rol)
+    window.addEventListener("storage", checkUserRole);
+  });
+</script>
+
+    </a>
+  <i class="fas fa-user"></i>
+    <button id="Myaccount" data-mdb-dropdown-init type="button" class="nav-link dropdown-toggle" aria-expanded="false" role="button" > Mi cuenta </button>
+    <i class="jsx-1143734785 myaccount-text" > </i>
+    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+      <li><a class="dropdown-item" id="signup" href="./src/signup.html">Signup</a></li>
+      <li><a class="dropdown-item" id="login" href="./src/login.html">Login</a></li>
+      <li><a class="dropdown-item" id="logout" href="#">Close Section</a></li>
+
+      <li><hr class="dropdown-divider" /></li>
+      <i class="fab fa-playstation"></i>  <i class="fab fa-xbox"></i> <i class="fab fa-steam"></i>  
+    </ul>
+  </li>
+</ul>
+
+  </nav>
+  <!-- Navbar -->
+<!-- Carousel with Images -->
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+      <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+      <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+      <li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
+      <li data-bs-target="#myCarousel" data-bs-slide-to="4"></li>
+  </ul>
+    <!-- Carousel inner -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+          <img src="./src/css/images/chasis.jpg" alt="Imagen 1" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+          <img src="./src/css/images/CARRUSEL2.png" alt="Imagen 2" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+          <img src="./src/css/images/CARRUSEL3.png" alt="Imagen 3" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+          <img src="./src/css/images/CARRUSEL4.png" alt="Imagen 4" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+          <img src="./src/css/images/CARRUSEL5.png" alt="Imagen 5" class="d-block w-100">
+      </div>
+  </div>
+  
+  <!-- Carousel controls -->
+  <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+  </a>
+</div>
+         <!-- Carrusel de marcas -->
+<div class="slider">
+  <div class="slide-track">
+    <div class="slide">
+      <img src="src/css/images/AORA.png" alt="AORA">
+    </div>
+    <div class="slide">
+      <img src="src/css/images/ALIENWARE.PNG" alt="ALIENWARE">
+    </div>
+    <div class="slide">
+      <img src="src/css/images/ASUS.PNG" alt="ASUS">
+    </div>
+    <div class="slide">
+      <img src="src/css/images/patrocinadores.png" alt="Patrocinadores">
+    </div>
+    <div class="slide">
+      <img src="src/css/images/LENOVO.png" alt="LENOVO">
+    </div>
+    <div class="slide">
+      <img src="src/css/images/MSI.PNG" alt="MSI">
+    </div>
+    <div class="slide">
+      <img src="src/css/images/NVIDIA.PNG" alt="NVIDIA">
+    </div>
+    <!-- Repetición de imágenes para el efecto continuo del carrusel -->
+    <div class="slide">
+      <img src="src/css/images/AORA.png" alt="AORA">
+    </div>
+    <div class="slide">
+      <img src="src/css/images/ALIENWARE.PNG" alt="ALIENWARE">
+    </div>
+    <div class="slide">
+      <img src="src/css/images/ASUS.PNG" alt="ASUS">
+    </div>
+    <div class="slide">
+      <img src="src/css/images/patrocinadores.png" alt="Patrocinadores">
+    </div>
+    <div class="slide">
+      <img src="src/css/images/LENOVO.png" alt="LENOVO">
+    </div>
+    <div class="slide">
+      <img src="src/css/images/MSI.PNG" alt="MSI">
+    </div>
+    <div class="slide">
+      <img src="src/css/images/NVIDIA.PNG" alt="NVIDIA">
+    </div>
+  </div>
+</div>
+
+<!--marcas-->
+<!-- Tarjeta con fondo semitransparente y contenido -->
+<div class="card bg-image shadow-1-strong" style="background-color: rgba(197, 33, 33, 0.76);">
+  <div class="card-body text-white">
+    <h2 id="seccion1"></h2>
+    <p class="card-text">
+      Catálogo de productos
+    </p>
+  </div>  
+</div>
+<!-- Card -->
+<footer class="bg-body-tertiary text-center">
+  <!-- Grid container -->
+  <div class="container p-4"></div>
+  <!-- Grid container -->
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100" style="background-color: rgba(197, 33, 33, 0.76);">
+          <img src="https://www.latercera.com/resizer/Gvxnb8rGV_mdIJGP57ezEKq8ryQ=/arc-anglerfish-arc2-prod-copesa/public/UYOUUFV5DNFXZMUFXJVX5LU7GU.jpeg" class="card-img-top fixed-img" alt="Monitor 4K Odyssey Ark"/>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Monitor 4K Odyssey Ark</h5>
+            <p class="card-text">
+              Imágenes nítidas con HDR 2000, UHD y 165Hz. Curvatura 1000R para máxima inmersión. ¡Elige lo mejor para tus juegos!
+            </p>
+            <a href="./codigocarrito/index.html" class="gothic-button"> Ir a Store Lentech  </a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" style="background-color: rgba(197, 33, 33, 0.76);">
+          <img src="https://m.media-amazon.com/images/I/81pxfTA02rL.jpg" class="card-img-top fixed-img" alt="Escritorio Gamer neon"/>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Escritorio Gamer Neon</h5>
+            <p class="card-text">
+              Ahorra espacio con su diseño en L y disfruta de un look gamer único. ¡El escritorio que maximiza tu experiencia!
+            </p>
+            <a href="./codigocarrito/index.html" class="gothic-button"> Ir a Store Lentech </a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" style="background-color: rgba(197, 33, 33, 0.76);">
+          <img src="https://redragon.es/content/uploads/2023/09/ire-web-lol-bloque-1.jpg" class="card-img-top fixed-img" alt="Audifonos Ire Pro H848"/>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Audífonos Ire Pro H848 Edición Limitada</h5>
+            <p class="card-text">
+              Sonido premium y diseño exclusivo de Mobile Legends. ¡Sumérgete en la mejor experiencia auditiva!
+            </p>
+            <a href="./codigocarrito/index.html" class="gothic-button">Ir a Store Lentech </a>
+          </div>
+        </div>
+      </div>
+  </div>
+</footer>
+<footer class="bg-body-tertiary text-center">
+  <!-- Grid container -->
+  <div class="container p-4"></div>
+  <!-- Grid container -->
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100" style="background-color: rgba(197, 33, 33, 0.76);">
+          <img src="https://redragon.es/content/uploads/2021/04/IMPACT.png" class="card-img-top fixed-img" alt="Monitor 4K Odyssey Ark"/>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">MOUSE GAMER Impact M908 </h5>
+            <p class="card-text">
+              Los 18 botones del Impact son configurables por software. También puedes configurar macros que te resultarán muy útiles en tus partidas de MOBA y MMORPG.
+            </p>
+            <a href="./codigocarrito/index.html" class="gothic-button">Ir a Store Lentech </a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" style="background-color: rgba(197, 33, 33, 0.76);">
+          <img src="https://redragon.es/content/uploads/2024/08/OLAF-K648-bloque-1.jpg" class="card-img-top fixed-img" alt="Escritorio Gamer neon"/>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Teclado Red Dragon Olaf K673 </h5>
+            <p class="card-text">
+            Sumamente estable y robusto, el Olaf es un teclado mecánico compacto de 94 teclas y calidad premium con estructura completa de aluminio. </p>
+            <a href="./codigocarrito/index.html" class="gothic-button"> Ir a Store Lentech </a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" style="background-color: rgba(197, 33, 33, 0.76);">
+          <img src="https://redragon.es/content/uploads/2024/03/juno-660x520-1.png" class="card-img-top fixed-img" alt="Audifonos Ire Pro H848"/>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Mando Redragon JUNO G818 </h5>
+            <p class="card-text">
+              El Juno es un mando de PC con diseño tipo PS4 y compatibilidad multiplataforma que permite a los usuarios de PC y consolas tener una alternativa de juego accesible y de alta calidadCoexión inalámbrica Bluetooth y cable extraíbl hasta 24 horas de autonomía
+            </p>
+            <a href="./codigocarrito/index.html" class="gothic-button">Ir a Store Lentech </a>
+          </div>
+        </div>
+      </div>
+  </div>
+</footer>
+<footer class="bg-body-tertiary text-center">
+  <!-- Grid container -->
+  <div class="container p-4"></div>
+  <!-- Grid container -->
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100" style="background-color: rgba(197, 33, 33, 0.76);">
+          <img src="https://redragon.es/content/uploads/2021/05/C502-BR.png" class="card-img-top fixed-img" alt="Monitor 4K Odyssey Ark"/>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Silla Gamer Capricornus C502 </h5>
+            <p class="card-text"> Diseñada para atenuar el estrés que sufren las articulaciones desde la cadera hasta la cervizen actividades como el gaming, la Capricornuses un sostén cómodo, saludable y, como bien
+puedes ver, 100% gamer.
+            </p>
+            <a href="https://www.samsung.com/co/multistore/co_epp_secret/finder.monitors/?cid=co_pd_ppc_google_monitores-regiones-brand_ecommerce_21467571253_text_performance-eb_165570640718&gad_source=1&gclid=Cj0KCQjwmOm3BhC8ARIsAOSbapU6bR7b17AW_M181GIoatcf7rGbC1EIvKauDxEx4vqA7cNteIAUL8waAi70EALw_wcB" class="gothic-button">Ir a Store Lentech </a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" style="background-color: rgba(197, 33, 33, 0.76);">
+          <img src="https://dlcdnwebimgs.asus.com/gain/6A42560A-BF3E-4940-9AE6-DF6D3794C70A/w185/fwebp" class="card-img-top fixed-img" alt="Escritorio Gamer neon"/>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">ROG Zephyrus G16</h5>
+            <p class="card-text">
+              Tenemos La mejor Laptod, gamer de Asus, NVIDIA® GeForce RTX™ 4070, Procesador Intel® Core™ Ultra 9 185H, 16" 2.5K (2560 x 1600, WQXGA) 16:10 240Hz OLED Pantalla ROG Nebula, Almacenamiento 1TB M.2 NVMe™ PCIe® 4.0 SSD
+            </p>
+            <a href="https://virtualmuebles.com/collections/escritorios-gamer?srsltid=AfmBOootP4sbmiLA7YmHvCHhHSKXmxdv1PCqxovT7EwKnE2KAAVTb-Ig" class="gothic-button"> Ir a Store Lentech</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" style="background-color: rgba(197, 33, 33, 0.76);">
+          <img src="https://gtech.systems/wp-content/uploads/2022/12/z9-05-e1707945404496.jpg" class="card-img-top fixed-img" alt="Audifonos Ire Pro H848"/>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Caja Chasis Iceberg Turbo Z9</h5>
+            <p class="card-text">
+              Buen espacio para el ensamble y flujo de aire. Acero de 0.5 mm SPCC con barrera EMI reforzada. Soporta tarjetas gráficas de hasta 310mm. Manejo de cableado con enrutado ordenado para alcanzar alto flujo de aire. Puertos en panel frontal 1 x USB 3.0 + 2 x USB 2.0 + HD Audio. 3 x 120mm aRGB ventiladores incluidos en el frente. 1 x 120mm aRGB ventilador incluido atrás. Disipador para CPU de altura máxima de 158mm. Soporta refrigeración líquida con radiadores de 120mm y 240mm. Panel lateral en Vidrio Templado.
+            </p>
+            <a href="./codigocarrito/index.html" class="gothic-button">Ir a Store Lentech</a>
+          </div>
+        </div>
+      </div>
+  </div>
+</footer>
+
+</footer>
+      <!-- Carousel wrapper -->
+      <section id="comunidad" class="container my-5">
+        <h2 class="text-center mb-4">Únete a Nuestra Comunidad</h2>
+        <p class="text-center">¡No juegues solo! Únete a miles de jugadores como tú, comparte tus logros y participa en eventos exclusivos.</p>
+        <div class="text-center">
+          <a href="https://discord.com" target="_blank" class="btn btn-primary mx-2">Unete a Nuestro Canal de Discord </a>  
+          <a href="https://kick.com" target="_blank" class="btn btn-secondary mx-2">Sigue nuestras transmisiones en kick</a>
+          <a href="https://twitch.tv" target="_blank" class="btn btn-primary mx-2">Sigue nuestras transmisiones en Twitch</a>
+        </div>
+      </section>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+      <!-- Section: Social media -->
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Conéctate con nosotros en las redes sociales:</span>
+        </div>
+        <!-- Left -->
+    
+        <!-- Right -->
+        <div>
+          <a href="https://www.facebook.com/search/top/?q=GAMING" class="me-4 text-reset">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+    
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>Lentech
+              </h6>
+              <h2 id="seccion2">¿Quienes somos ?</h2>
+              <p>
+                Lentech, es una empresa colombiana, creada por tres estudiantes visionarios , que les apasiona ofrecer lo mejor del mundo gaming. Desde las consolas más recientes hasta los juegos más populares, 
+                nuestro objetivo es proporcionar a los jugadores todo lo que necesitan para disfrutar de su experiencia de juego al máximo. Nuestro equipo está comprometido a brindar un excelente servicio al cliente y una selección de productos de alta calidad.
+                ¡Únete a nuestra comunidad y descubre todo lo que tenemos para ti!
+              </p>
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Productos
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">Consola</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Juegos</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Accesorios</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Hardware</a>
+              </p>
+              <a class="nav-link active" aria-current="page" href="#seccion4"></a>
+              <button type="button" class="btn btn-dark"  data-mdb-ripple-init>Volver al menu </button>
+              
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h2 id="seccion3"></h2>
+              <h6 class="text-uppercase fw-bold mb-4">Contactenos</h6>
+              <p><i class="fas fa-home me-3"></i>Colombia, CO</p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                alruva@gmail.com
+              </p>
+              <p><i class="fas fa-phone me-3"></i>3025678833 </p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+    
+      <!-- Copyright -->
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2021 Copyright:
+        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Alvaro, Ruben, Valentina, Daniel</a>
+        
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  <!-- MDB -->
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.umd.min.js"
+></script>
+<!-- jQuery y Bootstrap JS al final del body -->
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="./src/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>       
+</html>

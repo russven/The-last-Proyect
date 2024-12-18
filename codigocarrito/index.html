@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articulos Gamer Lentech</title>
+    <link rel="stylesheet" href="./estilo.css">
+    <link rel="icon" href="./img/logoact.png" type="image/png">
+</head>
+<body>
+    <header>
+        <h1><img src="./img/logoact.png" alt="Logo de Lentech" class="logo"> Store Lentech</h1>
+        <h4 class="productos_disponibles">Productos disponibles hasta la fecha</h4>
+    </header>
+
+    <section class="product-list">
+        <div class="product">
+            <img src="https://www.latercera.com/resizer/Gvxnb8rGV_mdIJGP57ezEKq8ryQ=/arc-anglerfish-arc2-prod-copesa/public/UYOUUFV5DNFXZMUFXJVX5LU7GU.jpeg" alt="Monitor 4K Odyssey Ark" class="product-img">
+            <h3>Monitor 4K Odyssey Ark</h3>
+            <p>Precio: $2'000.000</p>
+            <button class="add-to-cart" data-price="2000000">Agregar al carrito</button>
+        </div>
+        <div class="product">
+            <img src="https://m.media-amazon.com/images/I/81pxfTA02rL.jpg" alt="Escritorio Gamer Neon" class="product-img">
+            <h3>Escritorio Gamer Neon</h3>
+            <p>Precio: $899.999</p>
+            <button class="add-to-cart" data-price="899999">Agregar al carrito</button>
+        </div>
+        <div class="product">
+            <img src="https://redragon.es/content/uploads/2023/09/ire-web-lol-bloque-1.jpg" alt="Audífonos Ire Pro H848" class="product-img">
+            <h3>Audífonos Ire Pro H848 Edición Limitada</h3>
+            <p>Precio: $300.000</p>
+            <button class="add-to-cart" data-price="300000">Agregar al carrito</button>
+        </div>
+    </section>
+    
+    <section class="cart">
+        <h2>🛒 Tu carrito</h2>
+        <ul id="cart-items" class="cart-items">
+            <!-- Items agregados aparecerán aquí -->
+        </ul>
+        <p>Total: <span id="total">0</span></p>
+        <button id="buy-button">Comprar</button>
+    </section>
+
+    <!-- Script para la lógica del carrito y compra -->
+    <script src="./app.js"></script>
+</body>
+</html>
